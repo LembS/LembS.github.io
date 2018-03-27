@@ -47,112 +47,111 @@
         <h1><a href="#hero">Mudanzas Calima</a></h1>
       </div>
 
-      <nav id="nav-menu-container">
+      
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Inicio</a></li>
-          <li><a href="#about">Sobre nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Galeria</a></li>
-          <li><a href="#team">Ubicaci&oacute;n</a></li>
-         
-          <li><a href="#contact">Contacto</a></li>
+          <li>
+            <div>
+              <p><i class="fa fa-phone"></i> 314 892 8236</p>
+            </div>
+          </li>
+          <li>
+              <div>
+                <p><i class="fa fa-envelope"></i> mudanzascalima@hotmail.com</p>
+              </div>
+          </li>
+          <li class="menu-active">
+            <div>
+              <p><i class="fa fa-map-marker"></i> Cali, Prados del Norte<br>Calle 41 3N - 18</p>
+            </div>
+          </li>
+          <li class="menu-active">
+            <div class="social-links" >
+              <a href="https://www.facebook.com/Mudanzas-Calima-257673334772972/" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+          </li>
+          
+          
+      
         </ul>
-      </nav><!-- #nav-menu-container -->
+      
     </div>
   </header><!-- #header -->
 
   <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" >
+      <div class="hero" style="margin-top: 0px;">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            
+          </div>
+        </div>
+
+        <div class="container wow fadeInUp containerContacto" >
+          <div class="row justify-content-center">
+
+            <div class="col-lg-6 col-md-4">
+
+             <iframe width="100%" height="315" src="https://www.youtube.com/embed/5GPCfKlL4fg?rel=0&amp;showinfo=0" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="col-lg-3 col-md-8 formContainer">
+              <div class="form">
+                <p class="section-description" style="color: white;">Contactanos sin ninguna clase de compromiso.</p>
+                <div id="sendmessage">Tu mensaje ha sido enviado. Gracias!</div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm" id="contactForm">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Inserte al menos 4 caracteres" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Tu Correo Electronico" data-rule="email" data-msg="Ingrese un correo valido" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Al menos 8 caracteres de asunto" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor Escribe algo para nosotros" placeholder="Mensaje..." id="body"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                  <div class="text-center" style="margin-bottom: 5px;"><button type="submit"><a>Enviar Mensaje</a></button></div>
+                  <script type="text/javascript">
+                      var to = 'manuelmontesbermudez@gmail.com';
+                      var subject = '';
+                      var body = '';
+
+                      function mailTo(){
+                        subject = $('#subject').val();
+                        body = 'nombre%3A%20'+$('#name').val()+'%0Acorreo%3A%20'+$('#email').val()+'%0A%0ACuerpo%3A%0A'+$('#body').val();
+                        
+                        window.open='mailto:'+to+'?subject='+subject+'&amp;body='+body;
+                      }
+                  </script>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  <!--==========================
     Hero Section
   ============================-->
-  <section id="hero">
-    <div class="hero-container">
-      <h1>Mudanzas Calima</h1>
-      <h2>Cumplimiento, efectividad y buen cuidado.</h2>
-      <!--<a href="#about" class="btn-get-started">Get Started</a>-->
-    </div>
-  </section><!-- #hero -->
+
 
   <main id="main">
-
-    <!--==========================
-      About Us Section
-    ============================-->
-    <section id="about">
-      <div class="container">
-        <div class="row about-container">
-
-          <div class="col-lg-6 content order-lg-1 order-2">
-            <h2 class="title">Sobre nosotros</h2>
-            <p style="text-align: justify;">
-              Mudanzas Calima es una empresa con sede en la ciudad de cali, encargada principalmente del transporte de sus enseres o mercancia. Para todos los servicios que prestamos, garantizamos cumplimiento, efectividad y buen cuidado. Contamos con los recursos, el personal y la experiencia para ofrecer el servicio de transporte de sus bienes y mercancías a nivel de toda Colombia. Póngase en contacto con nosotros y llevaremos su encomienda al lugar que usted necesite, manteniendo un tiempo impecable y buen cuidado de sus enseres.
-            </p>
-
-            <div class="icon-box wow fadeInUp">
-              <div class="icon"><i class="fa fa-globe"></i></div>
-              <h4 class="title"><a href="">Cobertura internacional</a></h4>
-              <p class="description">Contamos con corbertura internacional en paises como Ecuador, Perú y Chile.</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-usd"></i></div>
-              <h4 class="title"><a href="">Descuentos</a></h4>
-              <p class="description">Realizamos descuentos de lunes a jueves, por supuesto, atendemos tambien domingos y festivos</p>
-            </div>
-
-            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="icon"><i class="fa fa-tag"></i></div>
-              <h4 class="title"><a href="">Cotizaci&oacute;n</a></h4>
-              <p class="description">Realizamos cotizaciones sin ninguna clase de compromiso.</p>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
-        </div>
-
-      </div>
-    </section><!-- #about -->
-
-    <!--==========================
-      Facts Section
-    ============================
-    <section id="facts">
-      <div class="container wow fadeIn">
-        <div class="section-header">
-          <h3 class="section-title">Facts</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-        <div class="row counters">
-
-  				<div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">232</span>
-            <p>Clients</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">521</span>
-            <p>Projects</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,463</span>
-            <p>Hours Of Support</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">15</span>
-            <p>Hard Workers</p>
-  				</div>
-
-  			</div>
-
-      </div>
-    </section>#facts -->
-
-    <!--==========================
+     <!--==========================
       Services Section
     ============================-->
-    <section id="services">
+    <section id="services" style="margin: 0px;">
       <div class="container wow fadeIn">
         <div class="section-header">
           <h3 class="section-title">Servicios</h3>
@@ -205,6 +204,85 @@
       </div>
     </section><!-- #services -->
 
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" style="margin: 0px;">
+      <div class="container" >
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Sobre nosotros</h2>
+            <p style="text-align: justify;">
+              Mudanzas Calima es una empresa con sede en la ciudad de cali, encargada principalmente del transporte de sus enseres o mercancia. Para todos los servicios que prestamos, garantizamos cumplimiento, efectividad y buen cuidado. Contamos con los recursos, el personal y la experiencia para ofrecer el servicio de transporte de sus bienes y mercancías a nivel de toda Colombia. Póngase en contacto con nosotros y llevaremos su encomienda al lugar que usted necesite, manteniendo un tiempo impecable y buen cuidado de sus enseres.
+            </p>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-globe"></i></div>
+              <h4 class="title"><a href="">Cobertura internacional</a></h4>
+              <p class="description">Contamos con corbertura internacional en paises como Ecuador, Perú y Chile.</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-usd"></i></div>
+              <h4 class="title"><a href="">Descuentos</a></h4>
+              <p class="description">Realizamos descuentos de lunes a jueves, por supuesto, atendemos tambien domingos y festivos</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-tag"></i></div>
+              <h4 class="title"><a href="">Cotizaci&oacute;n</a></h4>
+              <p class="description">Realizamos cotizaciones sin ninguna clase de compromiso.</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+
+
+
+    <!--==========================
+      Facts Section
+    ============================
+    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Facts</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">232</span>
+            <p>Clients</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">521</span>
+            <p>Projects</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,463</span>
+            <p>Hours Of Support</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">15</span>
+            <p>Hard Workers</p>
+  				</div>
+
+  			</div>
+
+      </div>
+    </section>#facts -->
+
+    
     <!--==========================
     Call To Action Section
     ============================-->
@@ -357,91 +435,7 @@
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=  AIzaSyBFLc4fFok7MTp2wdvsp8ymYr2ynlB0HMo '></script><div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-website.com/es'>maps-generator.com</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=AIzaSyBFLc4fFok7MTp2wdvsp8ymYr2ynlB0HMo'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(3.4778745,-76.52060059999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(3.4778745,-76.52060059999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Mudanzas Calima</strong><br>Calle 41 3N - 18<br> Cali<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
       </div>
     </section>
-    <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact">
-      <div class="container wow fadeInUp">
-        <div class="section-header">
-          <h3 class="section-title">Contacto</h3>
-          <p class="section-description">Contactanos sin ninguna clase de compromiso por medio de cualquiera de nuestros canales sociales</p>
-        </div>
-      </div>
-
-      
-
-      <div class="container wow fadeInUp">
-        <div class="row justify-content-center">
-
-          <div class="col-lg-4 col-md-4">
-
-            <div class="info">
-              <div>
-                <i class="fa fa-map-marker"></i>
-                <p>Cali, Prados del Norte<br> Calle 41 3N - 18</p>
-              </div>
-
-
-              <div>
-                <i class="fa fa-envelope"></i>
-                <p>mudanzascalima@hotmail.com</p>
-              </div>
-
-              <div>
-                <i class="fa fa-phone"></i>
-                <p>314 892 8236</p>
-              </div>
-            </div>
-
-            <div class="social-links">
-              <a href="https://www.facebook.com/Mudanzas-Calima-257673334772972/" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 col-md-8">
-            <div class="form">
-              <div id="sendmessage">Tu mensaje ha sido enviado. Gracias!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm" id="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Inserte al menos 4 caracteres" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Correo Electronico" data-rule="email" data-msg="Ingrese un correo valido" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Al menos 8 caracteres de asunto" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor Escribe algo para nosotros" placeholder="Mensaje..." id="body"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit" onclick="mailTo();"><a>Enviar Mensaje</a></button></div>
-                <script type="text/javascript">
-                    var to = 'manuelmontesbermudez@gmail.com';
-                    var subject = '';
-                    var body = '';
-
-                    function mailTo(){
-                      subject = $('#subject').val();
-                      body = 'nombre%3A%20'+$('#name').val()+'%0Acorreo%3A%20'+$('#email').val()+'%0A%0ACuerpo%3A%0A'+$('#body').val();
-                      
-                      window.open('mailto:'+to+'?subject='+subject+'&body='+body);
-                    }
-                </script>
-              </form>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #contact -->
+    
 
   </main>
 
@@ -466,7 +460,7 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
         -->
-        Bootstrap Templates by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Bootstrap Templates by <a href="https://bootstrapmade.com/" style="color: white;">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- #footer -->
@@ -479,7 +473,7 @@
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
-  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
 
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
